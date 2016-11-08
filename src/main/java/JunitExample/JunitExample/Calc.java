@@ -7,9 +7,10 @@ public class Calc {
 		
 	}
 	
-	public int div(int a,int b){
+	public int div(int a,int b)throws IllegalArgumentException{
+		if(b<=0){
+		throw new IllegalArgumentException("b mast be positiv");}				
+	
 		return a/b;
-		
-	}
-
+    }
 }
